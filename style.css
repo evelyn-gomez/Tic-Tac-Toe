@@ -68,7 +68,7 @@ body {
   display:grid;
   grid-template-rows: 1fr 1fr 4fr;
   justify-content: center;
-  background-color: var(--pink-lace-color);
+  background-color: var(--seafoam-green-color);
   height: 80%;
 }
 
@@ -110,6 +110,7 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: repeat(3, 1fr);
   border: 1px solid black;
+  background-color: var(--seafoam-green-color)
 }
 
 .gameboard > div{
@@ -121,7 +122,16 @@ body {
 }
 
 .pointer-O{
-  content: '\f004';
-  color:blue;
+  background-image: url(./Img/fruit-pineapple.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.pointer-X{
+  background-image: url(./Img/fruit-watermelon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
