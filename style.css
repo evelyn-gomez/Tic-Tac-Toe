@@ -78,14 +78,16 @@ body {
 }
 
 .start-game{
+  display:flex;
   grid-row: 2/3;
   justify-self: center;
 
 }
 .game{
   grid-row: 3/4;
-  /* display: none;    */
-  display:grid; 
+  display: none;  
+  position:absolute;
+  margin: 5rem; 
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 4fr;
   justify-self: center;
@@ -105,6 +107,9 @@ body {
 .player1{
   
 }
+.player2{
+
+}
 .gameboard{
   display:grid; 
   grid-template-columns: 1fr 1fr 1fr;
@@ -117,21 +122,29 @@ body {
   display: block;
   border: 1px solid black;
 }
-.player2{
-
-}
-
+                                
 .pointer-O{
-  background-image: url(./Img/fruit-pineapple.svg);
+  background-image: url(./Img/pineapple-svgrepo-com.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 
 .pointer-X{
-  background-image: url(./Img/fruit-watermelon.svg);
+  background-image: url(./Img/watermelon-svgrepo-com.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+}
+
+.hide-start-button {
+  display:none;
+}
+
+.display-gameboard{
+  display: grid; 
+}
+.error{
+  background-color: red;
 }
 
