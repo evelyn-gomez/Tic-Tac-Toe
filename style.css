@@ -104,12 +104,6 @@ body {
   gap: 15px;
 }
 
-.player1{
-  
-}
-.player2{
-
-}
 .gameboard{
   display:grid; 
   grid-template-columns: 1fr 1fr 1fr;
@@ -136,7 +130,6 @@ body {
   background-position: center;
   background-size: contain;
 }
-
 
 .hide-start-button {
   display:none;
