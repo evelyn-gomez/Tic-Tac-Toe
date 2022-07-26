@@ -70,7 +70,11 @@ document.addEventListener('DOMContentLoaded', function (){
       } else {
         return false
       }
+<<<<<<< HEAD
     }; 
+=======
+    }
+>>>>>>> 7ebc250210f17b8ac4d998e590cc3fff4b26ee8a
   
     function nextPlayer(player){
       switch (player){
@@ -106,6 +110,7 @@ document.addEventListener('DOMContentLoaded', function (){
   
     function checkWinner(thisPlayer){
     }
+<<<<<<< HEAD
   const playGame = (() => {
     let grid = document.querySelectorAll('.gameboard div');
     let currentPlayer =  ;
@@ -133,6 +138,35 @@ document.addEventListener('DOMContentLoaded', function (){
     };
   })(); 
 })(); 
+=======
+    const playGame = (() => {
+      let grid = document.querySelectorAll('.gameboard div');
+      let currentPlayer = undefined;
+      for (let square of grid) {
+        square.addEventListener('pointerdown', (event) => {
+          let square = event.target; 
+          let square_data = square.dataset.card; 
+          let squareAssignedMarker = isSquareAssignedMarker(square); 
+          if(squareAssignedMarker){
+            returnMarkerError(square); 
+            return; 
+          }else{
+            //there is no marker//need to assign
+            currentPlayer = nextPlayer(currentPlayer); 
+            postPlayerMarkerOnDOM(currentPlayer, square, square_data);  
+            console.log(currentPlayer.markerPositions); 
+            if(currentPlayer.markerPositions.length >= 3){
+              debugger;
+              let isWinner = currentPlayer.ArrayComparedToWinCombos();
+              console.log(isWinner);
+              };  
+            return;
+          }
+        });
+      };
+    })(); 
+  })(); 
+>>>>>>> 7ebc250210f17b8ac4d998e590cc3fff4b26ee8a
   
   let winCombos = [
     [1,2,3],

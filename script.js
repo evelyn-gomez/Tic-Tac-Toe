@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const BOARD = (() =>{
   let start_div = document.querySelector('.start-game');
   let start_btn = document.querySelector('.start-game-btn');
@@ -131,3 +132,9 @@ const BOARD = (() =>{
     })(); 
   })(); 
 })();
+=======
+document.addEventListener('DOMContentLoaded', function (){
+  
+  
+});
+>>>>>>> 7ebc250210f17b8ac4d998e590cc3fff4b26ee8a
