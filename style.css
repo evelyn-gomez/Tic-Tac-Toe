@@ -81,7 +81,7 @@ body {
   display:flex;
   grid-row: 2/3;
   justify-self: center;
-
+  align-items: center;
 }
 .game{
   grid-row: 3/4;
@@ -95,6 +95,7 @@ body {
 
 .prompt-next-player{
   grid-column: 1/2;
+
 }
 
 .game-and-players{
@@ -138,7 +139,31 @@ body {
 .display-gameboard{
   display: grid; 
 }
+
 .error{
   background-color: red;
 }
+
+.hide-winner{
+  display:none; 
+}
+.display-winner-gameover {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 83%;
+  background-color: plum;
+  opacity: .75;
+  justify-content: center;
+}
+
+.display-winner-gameover > p {
+  display: inherit;
+  align-items: center;
+  color: black;
+  opacity: 1;
+  font-size: xx-large;
+}
+
+
 
