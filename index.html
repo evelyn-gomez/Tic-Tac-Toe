@@ -24,14 +24,12 @@
     </div>
     <div class="game">
       <div class="prompt-next-player">
-        <p> update who is next player "Player 1/Bot/Player2" </p>
-        <div class="hide-winner">
-         <p></p>
-         <button>Start New Game</button>
+        <div class="players"> 
+          <div class="player1" data-player="player-1">Player 1</div>
+          <div class="player2 bot" data-player="player-2" >Player 2</div>
         </div>
       </div>
-      <div class="game-and-players">
-        <div class="players player1" data-player="player-1">Player 1</div>
+      <div class="winner_and_game">
         <div class="gameboard">
           <div data-card="1"></div>
           <div data-card="2"></div>
@@ -42,8 +40,15 @@
           <div data-card="7"></div>
           <div data-card="8"></div>
           <div data-card="9"></div>
-        </div> 
-        <div class="players player2-bot" data-player="player-2" >Player 2</div>
+        </div>
+        <div class="hide-winner">
+          <div>
+            <p></p>
+          </div>
+          <div>
+            <button>Start New G</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
