@@ -79,8 +79,8 @@ const BOARD = (() =>{
       }; 
     };
 
-    let player1 = Player('player1', X_Class); 
-    let player2 = Player('player2', O_Class); 
+    let player1 = Player('Player 1', X_Class); 
+    let player2 = Player('Player 2', O_Class); 
 
     let winCombos = [
       [1,2,3],
